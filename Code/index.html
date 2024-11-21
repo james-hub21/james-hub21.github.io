@@ -1,32 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>☀️My Profile🌙</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <div class="profile-container">
-        <div class="profile-card">
-            <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
-            <img src="JamesPhoto.jpg" alt="Profile Picture" class="profile-image">
-            <h1 class="name">James Lemuel M. Rabang</h1>
-            <p class="university">University of the Immaculate Conception</p>
-            <p class="major">Major: Bachelor of Science in Information Technology</p>
-            <p class="bio">
-                Hello! I'm James, an information technology student with a passion for technology and innovation. 
-                I enjoy working on my games projects(on going) and exploring new tech trends. 
-                Outside of academics, I love playing games, reading creative novel, and playing with my pets.
-            </p>
-               <h3>Fashion Blog</h3>
-           <a href="fashionblog/fashionblog/index.html">fashionblog</a>
-            <h3>Healthy Recipes</h3>
-           <a href="healthy recipe/healthy recipe/index.html">healthy-recipe</a>
-            <h3>Woodruff Porfolio</h3>
-             <a href="woodruffportfolio/woodruffportfolio/index.html">woodruffportfolio</a>
+
+    <!-- Dark Mode Toggle Button -->
+    <button class="dark-mode-toggle">🌙</button>
+
+    <!-- Header for Easy Navigation -->
+    <header>
+        <nav>
+            <a href="#profile">About Me</a>
+            <a href="#school-work">School Works</a>
+            <a href="#skills">Skills</a>
+            <a href="#weather">API</a>
+            <a href="#entertainment">Entertainment</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1 class="title">James Lemuel M. Rabang</h1>
+        <h2 class="subtitle">Bachelor of Science in Information Technology</h2>
+        <p class="intro">Welcome to my portfolio, where I showcase my work and passion for technology!</p>
+    </section>
+
+    <!-- Profile Section -->
+    <section id="profile">
+        <div class="profile-container">
+            <div class="profile-image-container">
+                <img src="JamesPhoto.jpg" alt="Profile Picture" class="profile-image">
+            </div>
+            <div class="profile-text">
+                <h2>About Me</h2>
+                <p>Hello! I'm James, an IT student with a passion for coding, technology, and innovation. I love working
+                    on projects that challenge me to learn and grow. I'm also interested in creating new and innovative
+                    tech solutions that impact the community.</p>
+            </div>
         </div>
-    </div>
-    <script src="index.js"></script>
+    </section>
+
+    <!-- School Works Section -->
+    <section id="school-work">
+        <h2>My School Works</h2>
+        <div class="school-work-container">
+            <div class="school-work-card">
+                <h3>Fashion Blog</h3>
+                <a href="#">View School Work</a>
+            </div>
+            <div class="school-work-card">
+                <h3>Healthy Recipes</h3>
+                <a href="#">View School Work</a>
+            </div>
+            <div class="school-work-card">
+                <h3>Woodruff Portfolio</h3>
+                <a href="#">View School Work</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skills-category">
+                <h3>Programming Languages</h3>
+                <ul>
+                    <li>JavaScript</li>
+                    <li>Java</li>
+                    <li>PHP</li>
+                </ul>
+            </div>
+
+            <div class="skills-category">
+                <h3>Web Development</h3>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+
+            <div class="skills-category">
+                <h3>Tools</h3>
+                <ul>
+                    <li>Git & GitHub</li>
+                    <li>VS Code</li>
+                </ul>
+            </div>
+
+            <div class="skills-category">
+                <h3>Soft Skills</h3>
+                <ul>
+                    <li>Teamwork</li>
+                    <li>Problem Solving</li>
+                    <li>Communication</li>
+                    <li>Adaptability</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Weather API Section -->
+
+    <!-- Weather Section -->
+    <section id="weather">
+        <h2>Weather Information</h2>
+        <div id="weatherData">
+            <!-- Weather data will be dynamically loaded here -->
+        </div>
+    </section>
+
+    <!-- Entertainment Section -->
+    <section id="entertainment">
+        <h2 class="entertainment-title">Entertainment</h2>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/ekr2nIex040" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <p>Here's a video from the YouTube channel that I think you'd enjoy!</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/jameslemuel.rabang" class="social-icon" target="_blank">
+                Facebook
+            </a>
+            <a href="https://github.com/james-hub21" class="social-icon" target="_blank">
+                GitHub
+            </a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
